@@ -12,7 +12,6 @@ Requirements
 ## Cookbooks:
 
 * php
-* composer
 
 ## Platforms:
 
@@ -27,9 +26,7 @@ Requirements
 Attributes
 ==========
 
-* `node['phpdcd']['install_method']` - Installation method, "pear" or "composer", defaults to "pear"
 * `node['phpdcd']['version']` - The phpdcd version that will be installed, defaults to "latest"
-* `node['phpdcd']['prefix']` - The composer.json bin-dir, defaults to "/usr/bin" (composer install method only)
 
 Usage
 =====
