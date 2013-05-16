@@ -34,5 +34,5 @@ php_pear "phpdcd" do
 	if node[:phpdcd][:version] != "latest"
 		version "#{node[:phpdcd][:version]}"
 	end
-	action :upgrade
+	action :upgrade if node[:phpdcd][:version] == "latest"
 end
