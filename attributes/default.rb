@@ -2,7 +2,8 @@
 # Cookbook Name:: phpdcd
 # Attributes:: default
 #
-# Copyright 2013, Escape Studios
+# Copyright 2013-2014, Escape Studios
 #
 
-default[:phpdcd][:version] = "latest"
+default['phpdcd']['install_method'] = "composer"
+default['phpdcd']['version'] = "latest"

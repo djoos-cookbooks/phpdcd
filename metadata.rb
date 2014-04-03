@@ -12,4 +12,6 @@ end
 
 depends "php"
 
-recipe "phpdcd", "Installs phpdcd using PEAR."
+recipe "phpdcd", "Installs phpdcd."
+recipe "phpdcd::composer", "Installs phpdcd using composer."
+recipe "phpdcd::phar", "Installs phpdcd using phar."
