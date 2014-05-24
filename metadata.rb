@@ -11,6 +11,7 @@ version '1.0.0'
 end
 
 depends 'php'
+depends 'git'
 depends 'composer'
 
 recipe 'phpdcd', 'Installs phpdcd.'

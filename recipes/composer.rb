@@ -5,6 +5,7 @@
 # Copyright 2013-2014, Escape Studios
 #
 
+include_recipe 'git'
 include_recipe 'composer'
 
 phpdcd_dir = "#{Chef::Config[:file_cache_path]}/phpdcd"
