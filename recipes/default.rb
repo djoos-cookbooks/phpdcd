@@ -6,8 +6,8 @@
 #
 
 case node['phpdcd']['install_method']
-    when "composer"
-        include_recipe "phpdcd::composer"
-    when "phar"
-        include_recipe "phpdcd::phar"
+when 'composer'
+  include_recipe 'phpdcd::composer'
+when 'phar'
+  include_recipe 'phpdcd::phar'
 end
