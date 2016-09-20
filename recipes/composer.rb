@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdcd
 # Recipe:: composer
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 include_recipe 'git'
@@ -18,11 +18,11 @@ directory phpdcd_dir do
 end
 
 # figure out what version to install
-if node['phpdcd']['version'] != 'latest'
-  version = node['phpdcd']['version']
-else
-  version = '*.*.*'
-end
+version = if node['phpdcd']['version'] != 'latest'
+            node['phpdcd']['version']
+          else
+            '*.*.*'
+          end
 
 # composer.json
 template "#{phpdcd_dir}/composer.json" do

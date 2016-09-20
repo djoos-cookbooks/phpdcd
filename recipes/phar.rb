@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdcd
 # Recipe:: phar
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 remote_file "#{node['phpdcd']['install_dir']}/phpdcd" do

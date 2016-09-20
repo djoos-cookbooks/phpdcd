@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdcd
 # Attributes:: composer
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 default['phpdcd']['prefix'] = '/usr/bin'

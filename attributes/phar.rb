@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdcd
 # Attributes:: phar
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 default['phpdcd']['phar_url'] = 'https://phar.phpunit.de/phpdcd.phar'

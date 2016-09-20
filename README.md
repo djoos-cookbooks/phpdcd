@@ -1,21 +1,21 @@
-[![Build Status](https://secure.travis-ci.org/escapestudios-cookbooks/phpdcd.png)](http://travis-ci.org/escapestudios-cookbooks/phpdcd)
+[![Build Status](https://travis-ci.org/djoos-cookbooks/phpdcd.png)](http://travis-ci.org/djoos-cookbooks/phpdcd)
 
-Description
-===========
+# phpdcd cookbook
+
+## Description
 
 This cookbook provides an easy way to install phpdcd, PHP Dead Code Detector.
 
 More information?
 https://github.com/sebastianbergmann/phpdcd
 
-Requirements
-============
+## Requirements
 
-## Cookbooks:
+### Cookbooks:
 
 * php
 
-## Platforms:
+### Platforms:
 
 * Ubuntu
 * Debian
@@ -25,33 +25,31 @@ Requirements
 * Scientific
 * Amazon
 
-Attributes
-==========
+## Attributes
 
 * `node['phpdcd']['install_method']` - Installation method, "composer" or "phar", defaults to "composer"
 * `node['phpdcd']['version']` - The phpdcd version that will be installed, defaults to "latest"
 * `node['phpdcd']['prefix']` - The composer.json bin-dir, defaults to "/usr/bin" (composer install method only)
 
-Usage
-=====
+## Usage
 
 1) include `recipe[phpdcd]` in a run list
-2)
-	change the attributes
-	--- OR ---
-	override the attribute on a higher level (http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
+2) change the attributes
+--- OR ---
+[override the attribute on a higher level](http://wiki.opscode.com/display/chef/Attributes#Attributes-AttributesPrecedence)
 
-References
-==========
+## References
 
 * [phpdcd GitHub repository] (https://github.com/sebastianbergmann/phpdcd)
 
-License and Authors
-===================
+## License and Authors
+
+Author: David Joos <development@davidjoos.com>
+Copyright: 2016, David Joos
 
 Author: David Joos <david.joos@escapestudios.com>
 Author: Escape Studios Development <dev@escapestudios.com>
-Copyright: 2013-2014, Escape Studios
+Copyright: 2013-2015, Escape Studios
 
 Unless otherwise noted, all files are released under the MIT license,
 possible exceptions will contain licensing information in them.

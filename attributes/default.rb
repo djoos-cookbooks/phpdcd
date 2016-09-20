@@ -2,7 +2,7 @@
 # Cookbook Name:: phpdcd
 # Attributes:: default
 #
-# Copyright 2013-2014, Escape Studios
+# Copyright (c) 2016, David Joos
 #
 
 default['phpdcd']['install_method'] = 'composer'
