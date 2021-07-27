@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdcd
+# Cookbook:: phpdcd
 # Attributes:: default
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 default['phpdcd']['install_method'] = 'composer'

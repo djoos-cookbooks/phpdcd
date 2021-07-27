@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdcd
+# Cookbook:: phpdcd
 # Recipe:: composer
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 include_recipe 'git'
@@ -13,7 +13,7 @@ phpdcd_dir = "#{Chef::Config[:file_cache_path]}/phpdcd"
 directory phpdcd_dir do
   owner 'root'
   group 'root'
-  mode 0755
+  mode '755'
   action :create
 end
 
@@ -29,10 +29,10 @@ template "#{phpdcd_dir}/composer.json" do
   source 'composer.json.erb'
   owner 'root'
   group 'root'
-  mode 0600
+  mode '600'
   variables(
-    :version => version,
-    :bindir => node['phpdcd']['prefix']
+    version: version,
+    bindir: node['phpdcd']['prefix']
   )
 end
 

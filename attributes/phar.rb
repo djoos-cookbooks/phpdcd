@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdcd
+# Cookbook:: phpdcd
 # Attributes:: phar
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 default['phpdcd']['phar_url'] = 'https://phar.phpunit.de/phpdcd.phar'

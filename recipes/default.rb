@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: phpdcd
+# Cookbook:: phpdcd
 # Recipe:: default
 #
-# Copyright (c) 2016, David Joos
+# Copyright:: (c) 2016, David Joos
 #
 
 case node['phpdcd']['install_method']
